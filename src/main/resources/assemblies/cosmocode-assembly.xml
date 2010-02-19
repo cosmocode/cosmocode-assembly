@@ -6,8 +6,9 @@
     <formats>
         <format>zip</format>
     </formats>
-    <includeBaseDirectory>false</includeBaseDirectory>
+    <includeBaseDirectory>true</includeBaseDirectory>
 
+    <!--
     <dependencySets>
         <dependencySet>
             <scope>runtime</scope>
@@ -25,6 +26,7 @@
             </excludes>
         </dependencySet>
     </dependencySets>
+    -->
 
     <fileSets>
         <!-- general important files -->
@@ -67,6 +69,12 @@
         <fileSet>
             <directory>conf</directory>
             <outputDirectory>conf</outputDirectory>
+        </fileSet>
+
+        <!-- web application e.g. php projects -->
+        <fileSet>
+            <directory>src/main/webapp</directory>
+            <outputDirectory>webapp</outputDirectory>
         </fileSet>
     </fileSets>
 
