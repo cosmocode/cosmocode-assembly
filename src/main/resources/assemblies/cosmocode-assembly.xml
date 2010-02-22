@@ -8,25 +8,12 @@
     </formats>
     <includeBaseDirectory>true</includeBaseDirectory>
 
-    <!--
     <dependencySets>
         <dependencySet>
             <scope>runtime</scope>
-            <outputDirectory></outputDirectory>
-            <includes>
-                <include>*:zip</include>
-            </includes>
-            <unpack>true</unpack>
-        </dependencySet>
-        <dependencySet>
-            <scope>runtime</scope>
             <outputDirectory>lib</outputDirectory>
-            <excludes>
-                <exclude>*:zip</exclude>
-            </excludes>
         </dependencySet>
     </dependencySets>
-    -->
 
     <fileSets>
         <!-- general important files -->
