@@ -11,34 +11,22 @@
     <scm>
         <developerConnection>scm:svn:https://commons.svn.cosmocode.de/cosmocode-assembly/trunk</developerConnection>
     </scm>
-
+    <distributionManagement>
+	<repository>
+	    <id>cosmocode-public-releases</id>
+	    <name>CosmoCode public releases</name>
+	    <url>scp://mvn.cosmocode.de:6589/var/www/mvn/</url>
+	</repository>
+	<snapshotRepository>
+	    <id>cosmocode-private-snapshots</id>
+	    <name>CosmoCode private snapshots</name>
+	    <url>http://mvn.cosmo/artifactory/libs-snapshots-local</url>
+	</snapshotRepository>
+    </distributionManagement>
     <profiles>
         <profile>
-            <id>cosmocode-private</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>cosmocode-public-snapshots</id>
             <distributionManagement>
-                <repository>
-                    <id>cosmocode-private-releases</id>
-                    <name>CosmoCode private releases</name>
-                    <url>http://mvn.cosmo/artifactory/libs-releases-local</url>
-                </repository>
-                <snapshotRepository>
-                    <id>cosmocode-private-snapshots</id>
-                    <name>CosmoCode private snapshots</name>
-                    <url>http://mvn.cosmo/artifactory/libs-snapshots-local</url>
-                </snapshotRepository>
-            </distributionManagement>
-        </profile>
-        <profile>
-            <id>cosmocode-public</id>
-            <distributionManagement>
-                <repository>
-                    <id>cosmocode-public-releases</id>
-                    <name>CosmoCode public releases</name>
-                    <url>scp://mvn.cosmocode.de:6589/var/www/mvn/</url>
-                </repository>
                 <snapshotRepository>
                     <id>cosmocode-public-snapshots</id>
                     <name>CosmoCode public snapshots</name>
