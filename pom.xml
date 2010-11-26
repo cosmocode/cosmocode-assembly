@@ -16,7 +16,7 @@
 	<packaging>jar</packaging>
 
 	<scm>
-		<developerConnection>scm:svn:https://commons.svn.cosmocode.de/cosmocode-assembly/trunk</developerConnection>
+		<developerConnection>scm:git:git@github.com:cosmocode/${project.artifactId}.git</developerConnection>
 	</scm>
 	<repositories>
 		<repository>
