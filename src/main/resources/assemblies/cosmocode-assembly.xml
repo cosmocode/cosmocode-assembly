@@ -84,6 +84,9 @@
         <fileSet>
             <directory>src/main/php</directory>
             <outputDirectory>www</outputDirectory>
+            <excludes>
+                <exclude>**/tmp/**</exclude>
+            </excludes>
         </fileSet>
 
         <!-- additional (perhaps optional) files -->
